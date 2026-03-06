@@ -1,6 +1,7 @@
 {
-  "name": "supplier-forecast-agent",
+  "name": "forecast-to-commit-agent",
   "version": "1.0.0",
+  "main": "src/main.tsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,11 +13,13 @@
     "react-router-dom": "^6.0.0",
     "tailwindcss": "^3.0.0",
     "lucide-react": "^0.2.0",
-    "recharts": "^2.1.0"
+    "recharts": "^2.1.0",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "typescript": "^4.0.0",
     "vite": "^2.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
     "postcss": "^8.0.0",
     "autoprefixer": "^10.0.0"
   }
