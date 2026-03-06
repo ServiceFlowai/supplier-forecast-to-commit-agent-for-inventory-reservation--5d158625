@@ -1,2 +1,18 @@
-:root { color-scheme: light dark; }
-body { margin: 0; font-family: system-ui, sans-serif; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+table {
+  @apply min-w-full bg-white;
+}
+th, td {
+  @apply border px-4 py-2;
+}

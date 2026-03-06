@@ -1,19 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
-import NegotiationRules from './pages/NegotiationRules';
-import Notifications from './pages/Notifications';
-import Login from './pages/Login';
-import './styles/tailwind.css';
+import Workbench from './pages/Workbench';
+import PRDetail from './pages/PRDetail';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="App">
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/admin/negotiation-rules" element={<NegotiationRules />} />
-        <Route path="/notifications" element={<Notifications />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/workbench" element={<Workbench />} />
+        <Route path="/workbench/:prId" element={<PRDetail />} />
       </Routes>
     </div>
   );
